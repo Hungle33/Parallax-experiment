@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$window = $(window);
+			$(window).scroll(function(){
+				$("#bg1").css({backgroundPosition: '10% ' +($window.scrollTop()/ 12) + 'px'});	
+				$("#planet1").css({top: 300 -($window.scrollTop()/ 8) + 'px', left: -300 +($window.scrollTop()/ 70) + 'px'});	
+				$("#planet2").css({bottom: -300 +($window.scrollTop()/ 12) + 'px',right: -400 -($window.scrollTop()/ 90) + 'px'});
+				$("#planet3").css({bottom: -400 +($window.scrollTop()/ 5) + 'px', left: 50 -($window.scrollTop()/ 120) + 'px'});	
+				$("#planet4").css({bottom: -200 +($window.scrollTop()/ 3) + 'px', right: 200 -($window.scrollTop()/ 40) + 'px'});
+				$("#quote1").css({top: 400 -($window.scrollTop()/ 18) + 'px'});
+				$("#quote2").css({top: 460 -($window.scrollTop()/ 13) + 'px'});	
+			});
+			$('img').on('dragstart', function(event) { event.preventDefault(); });	
+		});
+	</script>
+	<title>Background</title>
+	<style>
+		body {
+			margin:0px;
+		}
+		#bg1 {
+			background:#000 url("testbg.jpg") -10% 0 no-repeat fixed;
+			top:0px;
+			position:fixed;
+			width:100%;
+			background-size:cover;
+			bottom:0px;
+			z-index:-1;
+		}
+		#planet1 {
+			position:fixed;
+			top:300px;
+			left:-300px;
+			z-index:100;
+		}
+		#planet2{
+			position:fixed;
+			bottom:-300px;
+			right:-400px;
+			z-index:100;
+		}
+		#planet3{
+			position:fixed;
+			bottom:-400px;
+			left:50px;
+			z-index:101;
+		}
+		#planet4{
+			position:fixed;
+			bottom:-200px;
+			right:200px;
+			z-index:101;
+		}
+		#quote1{
+			position:fixed;
+			left:20px;
+			color:#999;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+			font-size:40px;
+			z-index:102;
+			top:400px;
+			width:600px;
+			letter-spacing:4px;
+		}
+		#quote2 {
+			position:fixed;
+			top:460px;
+			right:50px;
+			color:#999;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+			font-size:30px;
+			z-index:102;
+			width:500px;
+			line-height:.9;
+			letter-spacing:4px;
+			text-align:center;
+		}
+		.nopara {
+			opacity:.95;
+			width:600px;
+			margin:0 auto;
+			color:white;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+			background-color:#6C6;
+			font-size:20px;
+			box-shadow:0px 0px 15px #000;
+			padding-left:30px;
+			padding-right:30px;
+			text-align:right;
+			z-index:104;
+			position:relative;
+			line-height:.9;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="planet1"><img style="width:650px;height:650px"src="img/planet1.png"/></div>
+	<div id="planet2"><img style="width:900px;height:900px"src="img/planet2.png"/></div>
+	<div id="planet3"><img style="width:600px;height:600px"src="img/inQontrol_qdance.png"/></div>
+	<div id="planet4"><img style="width:540px;height:500px"src="img/planet4.png"/></div>
+
+	<div id="quote1"><q>Space: The final frontier</q></div>
+
+	<div id="quote2"><q>To seek out new life and new civilizations, to boldly go where no man has gone before.</q></div>
+	<div id="bg1" data-speed="10" data-type="background">
+	</div>
+	<div class="nopara"><h1 style="color:#333;padding-top:30px;text-align:center;">Deep Space</h1>Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.<br />
+		<br />
+
+		Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?
+		<br /><br />
+		Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+		<br /><br />
+		Problems look mighty small from 150 miles up.
+		<br /><br />
+		Astronomy compels the soul to look upward, and leads us from this world to another.
+		<br /><br />
+		A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.
+		<br /><br />
+		As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+		<br /><br />
+		We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.
+		<br /><br />
+		Where ignorance lurks, so too do the frontiers of discovery and imagination.
+		<br /><br />
+		Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+		<br /><br />
+		The dreams of yesterday are the hopes of today and the reality of tomorrow.
+		<br /><br />
+		The dreams of yesterday are the hopes of today and the reality of tomorrow.
+		<br /><br />
+		Where ignorance lurks, so too do the frontiers of discovery and imagination.
+		<br /><br />
+		We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.
+		<br /><br />
+		Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+		<br /><br />
+		It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
+		<br /><br />
+		I believe every human has a finite number of heartbeats. I don't intend to waste any of mine
+		<br /><br />
+		Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+		<br /><br />
+		We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
+		<br /><br />
+		Curious that we spend more time congratulating people who have succeeded than encouraging people who have not.
+		<br /><br />
+		Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+		<br /><br />
+		NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.
+		<br /><br />
+		Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+		<br /><br />
+		The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.
+		<br /><br />
+		Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?
+		<br /><br />
+		Astronomy compels the soul to look upward, and leads us from this world to another.
+		<br /><br />
+		What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+		<br /><br />
+		Failure is not an option.
+		<br /><br />
+		Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+		<br /><br />
+		It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
+		<br /><br />
+		The sky is the limit only for those who aren't afraid to fly!
+		<br /><br />
+		As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+		<br /><br />
+		As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+		<br /><br />
+		Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.
+		<br /><br />
+		What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+		<br /><br />
+		To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?
+		<br /><br />
+		I don't know what you could say about a day in which you have seen four beautiful sunsets.
+		<br /><br />
+		We have an infinite amount to learn both from nature and from each other
+		<br /><br />
+		There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.
+		<br /><br />
+		I believe every human has a finite number of heartbeats. I don't intend to waste any of mine
+	</div>
+</body>
+</html>
